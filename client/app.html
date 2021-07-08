@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pune Home Price </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img">
+<div id="slideshow">
+    <div>
+      <img src="https://images.indianexpress.com/2021/01/Punes_Aga_khan_palace_01.jpg">
+    </div>
+    <div>
+      <img src="https://new-img.patrika.com/upload/2020/01/04/vada.jpg">
+    </div>
+    <div>
+      <img src="https://punetourism.co.in/images/places-to-visit/headers/lal-mahal-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg">
+    </div>
+    <div>
+        <img src="https://i0.wp.com/www.campustimespune.com/wp-content/uploads/2015/10/ganesh-chathurthi-celebrations-in-Pune.jpg?fit=1200%2C628&ssl=1">
+    </div>
+  </div>
+ </div> 
+<marquee behavior="alternate" >Welcome to Pune Property Prices Predictor</marquee>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Bath</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Viman Nagar</option>
+        <option>Hadapsar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
